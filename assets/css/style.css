@@ -1,0 +1,412 @@
+/*!
+Theme Name: Songs of Blood
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: songs-of-blood
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Songs of Blood is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+/* === GLOBAL === */
+
+html {
+	background-color: #000;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+  margin-bottom: 230px;
+  font-family: "Muli", sans-serif;
+}
+
+/* = text = */
+.blood-text { 
+	font-family: "Quintessential", cursive;
+	color: #ec008c;
+}
+
+/* === NAVBAR === */
+
+.navbar-dark {
+	background-color: rgb(0, 0, 0); /* The Fallback */
+    background-color: rgba(0,0,0,.9)!important;
+}
+
+.navbar-dark .nav-link{
+	transition: all ease .2s;
+}
+
+.navbar-dark .nav-link:hover{
+	color: #ec008c!important;
+}
+
+.dropdown-menu{
+	background-color: rgb(0, 0, 0); /* The Fallback */
+	background-color: rgba(0,0,0,.9)!important;
+}
+
+.dropdown-item{
+	color: rgb(255, 255, 255); /* The Fallback */
+	color: rgba(255,255,255,.5);
+}
+
+.dropdown-item:hover{
+	color: #fff;
+	background-color: #ec008c;
+}
+
+/* === HOME PAGE STYLES === */
+
+/* = home banner = */
+
+#home-banner{
+	padding-top: 50px;
+	min-height: 100vh;
+	background-color: #000;
+	background-image: url("../img/home-banner-bg.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #fff;
+}
+
+#home-banner .welcome-text {
+	background-color: rgb(0, 0, 0); /* The Fallback */
+	background-color: rgba(0,0,0,.6);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#home-banner span.blood-text:before { content: ' '; display: block;}
+
+#home-banner .welcome-text .blood-text{
+	display: block;
+	margin-left: 90px;
+	font-size: 2.3em;
+}
+
+#home-banner .welcome-text h2{
+	display: block;
+	margin: -15px 0 15px 135px;
+	font-size: 1.3em;
+}
+
+/* = subscribe-callout = */
+
+#subscribe-callout {
+	background-image: url("../img/brushed.png");
+	min-height: 20vh;
+	padding: 20px;
+}
+
+/* = book-list = */
+
+#book-list{
+	padding: 20px;
+	background-color: #fff;
+}
+
+#book-list span.bk-preview-title{
+	color: #c50075;
+	font-weight: bold;
+	display: block;
+	margin: 5px auto -10px;
+}
+
+.bk-preview-container{
+	margin-bottom: 20px;
+}
+
+.bk-preview-container p{
+	font-size: .9em;
+}
+
+/* === BOOK MAIN PAGES === */
+
+#book-main{
+	padding-top: 100px;
+}
+
+#book-main .book-purchase-container{
+	background-image: url("../img/brushed.png");
+	padding: 30px 15px 15px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+#book-main .book-purchase-container p a{
+	color: #ec008c;
+	transition: all ease .2s;
+}
+
+#book-main .book-purchase-container p a:hover{
+	color: #c50075;
+	text-decoration: none;
+}
+
+
+#book-main h2{
+	font-size: 1.3em;
+	margin-bottom: 20px;
+	color: #484848;
+}
+
+#book-main .book-purchase-container img {
+	margin-bottom: 15px;
+}
+
+/* === CONTACT MAIN === */
+
+#contact-main{
+	padding-top: 100px;
+}
+
+#contact-main .contact-form{
+	background-image: url("../img/brushed.png");
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.recaptcha-wrap{
+	margin-bottom: 10px;
+}
+
+.asterisk{
+	color: #ec008c;
+}
+
+.contact-form .alert{
+	margin-top: 10px;
+}
+
+/* === ABOUT MAIN === */
+
+#about-main{
+	padding-top:80px;
+}
+
+#about-main a{
+	color: #ec008c;
+	transition: all ease .3s;
+}
+
+#about-main a:hover{
+	color: #c50075;
+	text-decoration: none; 
+}
+
+/* === FOOTER === */
+
+#footer-clear {
+	clear: both;
+	margin-top: 30px;
+	min-height: 10px;
+	width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  /* Set the fixed height of the footer here */
+  height: 230px;
+  background-image: url("../img/brushed.png");
+  background-color: #f5f5f5;
+}
+
+.footer h3{
+	font-size: 1.3em;
+}
+
+.footer-main{
+	height: 190px;
+}
+
+.footer a{
+	color: #ec008c;
+	transition: all ease .2s;
+}
+
+.footer a:hover{
+	color: #c50075;
+	text-decoration: none;
+}
+
+.footer a.custom-dis{
+	pointer-events: none;
+	color: #c50075;
+}
+
+
+.copyright {
+	background-color: #000;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+}
+
+i.fa-envelope { color: #ec008c;}
+
+.footer-connect h5{
+	display: inline-block; 
+	float: left; 
+	margin-right: 10px;
+	margin-top: 10px;}
+	
+ul.footer-nav{list-style-type: none; margin-top: -8px; margin-left: -30px;}
+
+ul.social{ list-style-type: none;}
+ul.social li {display: inline-block;}
+
+ul.social .fa-stack .fa {color: #ec008c; transition: all ease .3s;}
+ul.social .fa-stack .fa-circle { transform: scale(0);}
+
+ul.social .fa-stack:hover .fa-circle{transform: scale(1);}
+
+ul.social .fa-stack:hover .fa-twitter,
+ul.social .fa-stack:hover .fa-facebook,
+ul.social .fa-stack:hover .fa-instagram {color: #fff;}
+
+/* = footer form = */
+.footer-form .form-control:focus{
+	border-color: #ec008c;
+	
+}
+
+h3.mail-title{margin-bottom: 20px;}
+
+/* === BUTTONS === */
+.btn-pink {
+	color: #fff;
+	background-color: #ec008c;
+	transition: all ease .2s;
+}
+
+.btn-pink:hover{
+	cursor: pointer;
+	color:#f1f1f1;
+	background-color:#c50075;
+}
+
+.btn-clear{
+	color: #ec008c;
+	background-color: rgb(255, 255, 255); /* The Fallback */
+	background-color: rgba(236,0,140,0);
+	border: 2px solid #ec008c;
+	transition: all ease .3s;
+}
+
+.btn-clear:hover{
+	color: #fff;
+	background-color: rgb(236,0,140);
+	background-color: rgba(236,0,140,1);
+	
+}
+
+.btn-clear-dis{
+	pointer-events: none;
+	color: #c50075;
+	background: rgb(0, 0, 0); /* The Fallback */
+	background-color: rgba(0,0,0,.05);
+	border: 2px solid #c50075;
+}
+
+.footer .btn-pink{
+	margin-top: -5px;
+}
+
+/* === MEDIA QUERIES === */
+
+/*/ Extra Extra small devices (portrait phones, less than 361px)/*/
+@media (max-width: 400px) {
+	/* == GLOBAL == */
+	body {
+		margin-bottom: 350px;
+	}
+	
+	
+	/* == FOOTER == */
+	.footer {
+		height: 350px;
+	}
+	
+	.footer-main{
+		height: 310px;
+	}
+}
+/*/ Extra small devices (portrait phones, less than 576px)/*/
+@media (max-width: 575px) {
+	#home-banner .welcome-text{
+		margin-top: 0px;
+	}
+}
+
+/*/Small devices (landscape phones, less than 768px)/*/
+@media (max-width: 767px) { 
+	/* == GLOBAL == */
+	body {
+		margin-bottom: 330px;
+	}
+	
+	.sm-hidden {
+		display:none;
+	}
+	
+	/* == HOMEPAGE == */
+	#home-banner{
+		padding-top: 55px;
+		background-size: 100% 100%;
+	}
+	
+	/* == FOOTER == */
+	.footer {
+		height: 330px;
+	}
+	
+	.footer-main{
+		height: 290px;
+	}
+
+	h3.mail-title{margin-bottom: 10px;}
+}
+
+/*/Medium devices (tablets, less than 992px)/*/
+@media (max-width: 991px) { 
+	/* == GLOBAL == */
+	body {
+		margin-bottom: 370px;
+	}
+	
+	/* == FOOTER == */
+	.footer {
+		height: 370px;
+	}
+	
+	.footer-main{
+		height: 330px;
+	}
+		
+	h3.mail-title{margin-bottom: 10px;} 
+}
+
+/*/Large devices (desktops, less than 1200px)/*/
+/* @media (max-width: 1199px) { ... } */
